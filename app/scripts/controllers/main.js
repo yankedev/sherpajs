@@ -7,17 +7,24 @@ angular.module('sherpajsApp')
       'AngularJS',
       'Karma'
     ];
-  })
+  });
+
+angular.module('sherpajsApp')
     .controller('OrderCtrl', function ($scope, $routeParams, $http) {
 
         $scope.visibleCategory = 0;
+
         $scope.showCategory = function(i){
             if (i==$scope.visibleCategory) return true;
             return false;
         };
 
         $scope.setVisibleCategory = function(i){
-            $scope.visibleCategory = i;
+            if (i==$scope.visibleCategory){
+                $scope.visibleCategory = -1;
+            }else{
+                $scope.visibleCategory = i;
+            }
         }
 
         $scope.toggleEditMode = function(item){
