@@ -1,0 +1,75 @@
+
+<div class="container">
+
+    <h1>
+
+    <a ng-href="#/orders/{{order.username}}/{{order.year}}/{{order.previousweek}}/">&lt;</a> Ordinazione settimana {{order.week}} <a ng-href="#/orders/{{order.username}}/{{order.year}}/{{order.nextweek}}/">&gt;</a></p>
+    </h1>
+    <form id="shopping-list-form">
+        <div class="input-append row-fluid">
+            <input type="text" ng-model="search" class="search-query" placeholder="Search">
+            <button type="button" class="btn btn-primary" ng-click="calculateOrderTotal()">Total:
+                {{order.total | formatPrice}}</button>
+
+            <button ng-click="save()" ng-disabled="shopping-list-form.$invalid" class="btn btn-primary">Save Order</button>
+        </div>
+        <div class="accordion" id="accordion2">
+            <div class="accordion-group row-fluid"
+                 ng-repeat="category in weeklist.categories | orderBy : guiOrder">
+
+                <div class="accordion-heading" class="span12">
+                    <a class="accordion-toggle" data-toggle="collapse"
+                       data-parent="#accordion2" ng-click="setVisibleCategory($index)">
+                        {{category.name}} <input type="text"
+                                                 class="btn btn-info pull-right disabled"
+                                                 ng-show="weeklist.totals[category.name]"
+                                                 value="{{weeklist.totals[category.name] | formatPrice}}" disabled />
+                    </a>
+
+                    <div id="collapse{{$index}}"
+                         class="accordion-body row-fluid" ng-show="showCategory($index)">
+                        <div class="accordion-inner span12">
+                            <div ng-repeat="item in category.items | filter:search">
+                                <div class="row-fluid">
+                                    <div class="span1 input-mini">
+                                        <input class="input-mini" type="checkbox"
+                                               ng-model="order.items[item.name].editMode" />
+                                            <!--ng-model="order[item.name].editMode" /> -->
+                                    </div>
+                                    <div class="span2 input-append">
+
+                                        <input class="input-mini" id="appendedInput" ng-model-onchange
+                                               ng-change="calculateTotals(category)" type="number"
+                                               placeholder="0" ng-model="order.items[item.name].qty"
+                                                /> <span class="add-on">{{item.orderUnit}}</span>
+                                    </div>
+                                    <div class="span5">
+                                        <a href="#" ng-click="toggleEditMode(item)">{{item.name}}</a>
+                                    </div>
+                                    <div class="span4 pull-right">{{item.price}}
+                                        CHF/{{item.priceUnit}}</div>
+                                </div>
+                                <div class="row-fluid" ng-show="order.items[item.name].editMode">
+                                    <div class="span8">
+                                        <input type="range" class="input-large"
+                                               ng-model="order.items[item.name].qty"/>
+                                    </div>
+                                    <div class="span2 offset2">
+                                        <input type="text" class="btn btn-info pull-right disabled"
+                                               value="{{order.items[item.name].price | formatPrice}}" disabled />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+</div>
+

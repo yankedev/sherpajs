@@ -1,0 +1,149 @@
+[
+    {
+        "_id": "622cd256-d3fc-477e-a2f5-ef490b318412",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "Proposte",
+        "guiOrder": 0,
+        "items" : []
+    },
+    {
+        "_id": "b2a54782-c5e4-4b1e-a1f7-a282b630d965",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "Verdura",
+        "guiOrder": 1,
+        "items" : []
+    },
+    {
+        "_id": "1fcd1f13-da58-42a5-8ce1-d83bc8c548a9",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "Insalate",
+        "guiOrder": 2,
+        "items" : []
+    },
+    {
+        "_id": "1a42899b-1f28-471b-ac4b-deeebc71b5a1",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "Frutta",
+        "guiOrder": 3,
+        "items" : []
+    },
+    {
+        "_id": "7b77abc7-6161-43af-a3a5-091315abee3f",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "panetteria",
+        "guiOrder": 4,
+        "items" : []
+    },
+    {
+        "_id": "44dc3920-2371-478b-a62c-c28b05a3c015",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "pane",
+        "guiOrder": 5,
+        "items" : []
+    },
+    {
+        "_id": "ed9236f9-868f-4340-9dd2-b570e52784a3",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "pane frigo",
+        "guiOrder": 6,
+        "items" : []
+    },
+    {
+        "_id": "04c63f18-1cb7-4023-8cdc-b9c3400afe39",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "uova",
+        "guiOrder": 7,
+        "items" : []
+    },
+    {
+        "_id": "3d6dcce8-d4fe-4a2b-b9bb-2cea5c410321",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "senza lattosio",
+        "guiOrder": 8,
+        "items" : []
+    },
+    {
+        "_id": "effa745f-41c7-4466-8ace-2ab13e99c162",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "latte + latticini",
+        "guiOrder": 9,
+        "items" : []
+    },
+    {
+        "_id": "f460dcb8-69f1-4659-b201-d7f5978f065d",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "formaggi mucca",
+        "guiOrder": 10,
+        "items" : []
+    },
+    {
+        "_id": "8de2ebfb-740f-4caa-ac7d-ad49bc87aa5b",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "formaggi misti",
+        "guiOrder": 11,
+        "items" : []
+    },
+    {
+        "_id": "977db7a9-7d6b-465e-b52e-b2148c8cd949",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "formaggi capra",
+        "guiOrder": 12,
+        "items" : []
+    },
+    {
+        "_id": "9411335d-24a4-412f-ad55-9b141b5e0f0b",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "formaggi pecora",
+        "guiOrder": 13,
+        "items" : []
+    },
+    {
+        "_id": "e0f8b30f-d460-480d-849d-d36318bfe3ff",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "gastromia",
+        "guiOrder": 14,
+        "items" : []
+    },
+    {
+        "_id": "ed5a6f7a-bddf-4ab8-bc11-de4b8332e33f",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "congelati per consumo immediato",
+        "guiOrder": 15,
+        "items" : []
+    },
+    {
+        "_id": "c09bc2ee-986c-4628-b6f1-d98583b89c9d",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "carne + pesce freschi",
+        "guiOrder": 16,
+        "items" : []
+    },
+    {
+        "_id": "56bf75e4-a402-49e8-9d5c-7a3fef265b3c",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "salumeria",
+        "guiOrder": 17,
+        "items" : []
+    },
+    {
+        "_id": "65067e8b-e9b8-4ba4-936d-ae454829d472",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "burger vegetali",
+        "guiOrder": 18,
+        "items" : []
+    },
+    {
+        "_id": "b4319b49-bc56-4592-819a-e4f6ee0cad62",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "tofu + seitan",
+        "guiOrder": 19,
+        "items" : []
+    },
+    {
+        "_id": "f65887b2-1394-49e4-be9f-e0b73f214133",
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Category",
+        "name": "diversi",
+        "guiOrder": 20,
+        "items" : []
+    }
+]

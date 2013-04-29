@@ -1,0 +1,670 @@
+[
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf07c"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "Bio mandorle grattugiate sacchetto 300 g -PROMOZIONE-",
+        "origin": "Sp-Just",
+        "price": "7.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf07d"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "Bio nocciole grattugiate sacchetto 300 g -PROMOZIONE-",
+        "origin": "T-Just",
+        "price": "7.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf07e"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandorle intere sgusciate di Toritto 500 g",
+        "origin": "I-LaMandorla",
+        "price": "12.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf07f"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandorle sgusciate TOSTATE 200 g",
+        "origin": "I-LaMandorla",
+        "price": "7.50",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf080"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandorle alle erbe 200 g",
+        "origin": "I-LaMandorla",
+        "price": "10.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf081"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandorle al pomodoro 200 g",
+        "origin": "I-LaMandorla",
+        "price": "10.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf082"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandorle al curry 200 g",
+        "origin": "I-LaMandorla",
+        "price": "10.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf083"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandorle al cioccolato al latte 200 g",
+        "origin": "I-LaMandorla",
+        "price": "10.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf084"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandorle al cioccolato bianco 200 g",
+        "origin": "I-LaMandorla",
+        "price": "10.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf085"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandorle al cioccolato fondente 200 g",
+        "origin": "I-LaMandorla",
+        "price": "10.00",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf086"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "muffin di mandorle Mandorlino 2 x 50 g -senza glutine-",
+        "origin": "I-LaMandorla",
+        "price": "5.00",
+        "priceUnit": "conf",
+        "orderUnit": "conf",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf087"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "muffin di mandorle al cacao 2 x 50 g -senza glutine-",
+        "origin": "I-LaMandorla",
+        "price": "5.00",
+        "priceUnit": "conf",
+        "orderUnit": "conf",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf088"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "Verde torrone di Sardegna 200 g -PROMOZIONE-",
+        "origin": "I-Terra",
+        "price": "8.70",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf089"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "drink di riso alla NOCCIOLA 1lt -scad 06/2013-",
+        "origin": "I-TheBridge",
+        "price": "2.80",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf08a"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "passata di pomodori TICINESI vasetto 350 g -PROMOZIONE-",
+        "origin": "TiGusto",
+        "price": "4.50",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf08b"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "Hom Mali riso aromatico 1 kg -PROMOZIONE-",
+        "origin": "TH-Botteghe",
+        "price": "4.90",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf08c"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "Truffes 9 pezzi - 100 g -sconto 25%- -PROMOZIONE-",
+        "origin": "Div-Botteghe",
+        "price": "12.50",
+        "priceUnit": "conf",
+        "orderUnit": "conf",
+        "category": "Proposte"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf08d"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "BORSA SORPRESA ORTAGGI",
+        "origin": "diversi",
+        "price": "18.50",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf08e"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "patate CHARLOTTE sacco 5 kg -pasta soda-",
+        "origin": "CH-Wendelin",
+        "price": "13.50",
+        "priceUnit": "sacco",
+        "orderUnit": "sacco",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf08f"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "patate AGRIA, sacco 5 kg -farinosa-",
+        "origin": "CH",
+        "price": "12.00",
+        "priceUnit": "sacco",
+        "orderUnit": "sacco",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf090"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "patate DESIREE sacco 5 kg -farinosa-",
+        "origin": "CH",
+        "price": "12.50",
+        "priceUnit": "sacco",
+        "orderUnit": "sacco",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf091"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "cipolle",
+        "origin": "CH",
+        "price": "5.40",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf092"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "scalogno -eschalotte-",
+        "origin": "Francia",
+        "price": "7.20",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf093"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "aglio",
+        "origin": "Spagna",
+        "price": "1.20",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf094"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "barbabietole crude",
+        "origin": "CH",
+        "price": "3.90",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf095"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "sedano rapa ordinare al pz / pesare",
+        "origin": "CH",
+        "price": "6.50",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf096"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "cabis BIANCO ordinare al pz / pesare",
+        "origin": "CH",
+        "price": "5.00",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf097"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "verza ordinare al pz / pesare",
+        "origin": "I-Jonicabio",
+        "price": "6.00",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf098"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "cavolfiore ordinare al pz / pesare",
+        "origin": "I-Jonicabio",
+        "price": "5.70",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf099"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "broccoli",
+        "origin": "I-Jonicabio",
+        "price": "5.20",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf09a"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "CAROTE",
+        "origin": "CH",
+        "price": "3.30",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf09b"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "finocchi",
+        "origin": "I-Jonicabio",
+        "price": "4.80",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf09c"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "zucchine",
+        "origin": "I-Agrinova",
+        "price": "5.30",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf09d"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "pastinaca",
+        "origin": "CH",
+        "price": "6.80",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf09e"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "cavolo rapa al pezzo",
+        "origin": "Locarnini",
+        "price": "2.40",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf09f"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "cavolini di Bruxelles sacchetto 500 g",
+        "origin": "I-Jonicabio",
+        "price": "6.40",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a0"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "spinaci sacchetto ca 500 g",
+        "origin": "TI-diversi",
+        "price": "4.70",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a1"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "cicoria puntarella ca 700 g ordinare al pz / pesare",
+        "origin": "I-Jonicabio",
+        "price": "5.30",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a2"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "coste, cespo ca 500 g / pesare",
+        "origin": "I-Jonicabio",
+        "price": "5.30",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a3"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "porri ordinare a peso",
+        "origin": "CH",
+        "price": "7.30",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a4"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "sedano verde ca 400 g",
+        "origin": "I-Jonicabio",
+        "price": "4.30",
+        "priceUnit": "mz",
+        "orderUnit": "mz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a5"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "ramolaccio viola al pezzo",
+        "origin": "Cattori",
+        "price": "2.20",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a6"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "ravanelli al mazzo",
+        "origin": "Cattori",
+        "price": "1.90",
+        "priceUnit": "mz",
+        "orderUnit": "mz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a7"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "prezzemolo LISCIO al mazzo",
+        "origin": "TI-diversi",
+        "price": "1.90",
+        "priceUnit": "conf",
+        "orderUnit": "conf",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a8"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "coriandolo al mazzo",
+        "origin": "Pedroia",
+        "price": "2.20",
+        "priceUnit": "mz",
+        "orderUnit": "mz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0a9"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "zenzero ca 200 g",
+        "origin": "Camerun",
+        "price": "2.70",
+        "priceUnit": "conf",
+        "orderUnit": "conf",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0aa"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "avocados Hass al pezzo",
+        "origin": "I-Agrinova",
+        "price": "1.60",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Verdura"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0ab"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "rucola selvatica al mazzo",
+        "origin": "Pedroia",
+        "price": "1.90",
+        "priceUnit": "mz",
+        "orderUnit": "mz",
+        "category": "Insalate"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0ac"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "trevisana sacchetto ca 300 g",
+        "origin": "I-Jonicabio",
+        "price": "2.60",
+        "priceUnit": "conf",
+        "orderUnit": "conf",
+        "category": "Insalate"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0ad"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "cicoria belga sacchetto ca 500 g",
+        "origin": "CH",
+        "price": "6.50",
+        "priceUnit": "conf",
+        "orderUnit": "conf",
+        "category": "Insalate"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0ae"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "scarola ordinare al pz / pesare",
+        "origin": "I-Jonicabio",
+        "price": "6.00",
+        "category": "Insalate"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0af"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "foglia quercia al pezzo ca 200 g",
+        "origin": "Locarnini",
+        "price": "3.20",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Insalate"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0b0"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "lattughino LOLLO al pezzo",
+        "origin": "Locarnini",
+        "price": "2.90",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Insalate"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0b1"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "limoni",
+        "origin": "I-Agrinova",
+        "price": "3.30",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Frutta"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0b2"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "mandarini -con semi-",
+        "origin": "I-Agrinova",
+        "price": "4.10",
+        "priceUnit": "kg",
+        "orderUnit": "kg",
+        "category": "Frutta"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0b3"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "pompelmi rosa ordinare al pz / pesare",
+        "origin": "I-Agrinova",
+        "price": "4.00",
+        "category": "Frutta"
+    },
+    {
+        "_id": {
+            "$oid": "5138f9c2e510319e3fabf0b4"
+        },
+        "_class": "com.exteso.labs.sherpajs.domain.order.entity.Item",
+        "name": "kumquat cestino 250 g",
+        "origin": "I-Agrinova",
+        "price": "2.90",
+        "priceUnit": "pz",
+        "orderUnit": "pz",
+        "category": "Frutta"
+    }
+]
