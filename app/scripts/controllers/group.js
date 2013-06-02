@@ -10,9 +10,51 @@ function getCategory($scope, name){
     return undefined;
 };
 
+function calculateItemPrice(item){
+     return item.qty * item.price;
+}
+
 var sherpa = angular.module('sherpajsApp');
 
-   sherpa.controller('OrderCtrl', function ($scope, $routeParams, $http, $filter, Orders) {
+   sherpa.controller('GroupCtrl', function ($scope, $routeParams, $http, $filter, Orders) {
+
+
+       $scope.groupOrder = {};
+       $scope.groupOrder.week = week;
+       $scope.groupOrder.groupId = groupId;
+       $scope.groupOrder.participants = [];
+       $scope.groupOrder.items = {};
+
+
+        // We can retrieve a collection from the server
+        // GET: /sherpadb/collections/orders?apiKey=...&q=%7B%22week%22:%2232%22,+%22groupId%22:%22evelyne%22%7D
+        var week = $routeParams.week;
+        var groupId = $routeParams.groupId;
+        $scope.ordersDb = Orders.query({q:'{"week":"'+ week +'", "groupId":"'+groupId+'"}'},function(data){
+            angular.forEach(data, function(order){
+                if ($scope.groupOrder.participants.indexOf(order.username) == -1){
+                    $scope.groupOrder.participants.push(order.username);
+                }
+
+                angular.forEach(order.items, function(item){
+                    if (!$scope.groupOrder.items[item.name]) {
+                        $scope.groupOrder.items[item.name] =  {name : item.name,
+                                                                qty : item.qty,
+                                                                price : item.price,
+                                                                priceUnit: item.priceUnit,
+                                                                orderUnit: item.orderUnit,
+                                                                total: calculateItemPrice(item)
+                                                              };
+                    }else{
+                        var currentItem = $scope.groupOrder.items[item.name];
+                        currentItem['qty'] += item.qty;
+                        currentItem.total += calculateItemPrice(item);
+                    }
+                });
+            });
+        });
+
+
 
         $scope.visibleCategory = 0;
 

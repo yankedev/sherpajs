@@ -2,12 +2,10 @@
 <div class="container">
 
     <h1>
-
-    Gruppo: <a ng-href="#/group/{{order.groupId}}/{{order.year}}/{{order.week}}/">{{order.groupId}}</a>
-        <a ng-href="#/orders/{{order.groupId}}/{{order.year}}/{{order.previousweek}}/{{order.username}}/">&lt;</a>
+        Ordine di Gruppo: {{order.groupId}}
+    <a ng-href="#/group/{{order.groupId}}/{{order.year}}/{{order.previousweek}}/">&lt;</a>
         Ordinazione settimana {{order.week}}
-        <a ng-href="#/orders/{{order.groupId}}/{{order.year}}/{{order.nextweek}}/{{order.username}}/">&gt;</a>
-        </p>
+        <a ng-href="#/group/{{order.groupId}}/{{order.year}}/{{order.nextweek}}/">&gt;</a></p>
     </h1>
     <form id="shopping-list-form">
         <div class="input-append row-fluid">
@@ -16,15 +14,16 @@
                 {{order.total | formatPrice}}</button>
 
             <button ng-click="saveOrder()" ng-disabled="shopping-list-form.$invalid" class="btn btn-primary">Save Order</button>
+            <button>Participants: {{groupOrder.participants}}</button>
         </div>
         <div class="accordion" id="accordion2">
             <div class="accordion-group row-fluid"
-                 ng-repeat="category in weeklist.categories | orderBy : guiOrder">
+                 ng-repeat="item in groupOrder.items">
 
                 <div class="accordion-heading" class="span12">
                     <a class="accordion-toggle" data-toggle="collapse"
                        data-parent="#accordion2" ng-click="setVisibleCategory($index)">
-                        {{category.name}} <input type="text"
+                        {{item.name}} - {{item.qty}} - {{item.total | formatPrice}}<input type="text"
                                                  class="btn btn-info pull-right disabled"
                                                  ng-show="weeklist.totals[category.name]"
                                                  value="{{weeklist.totals[category.name] | formatPrice}}" disabled />

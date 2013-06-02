@@ -1,7 +1,7 @@
 // This is a module for cloud persistance in mongolab - https://mongolab.com
 var mongolab = angular.module('mongolab', ['ngResource']);
 mongolab.factory('Categories', function($resource) {
-    https://api.mongolab.com/api/1/databases/sherpadb/collections?apiKey=509acf3de4b0f2aa6bbd0607
+      //https://api.mongolab.com/api/1/databases/sherpadb/collections?apiKey=509acf3de4b0f2aa6bbd0607
       var Category = $resource('https://api.mongolab.com/api/1/databases' +
           '/sherpadb/collections/category/:id',
           { apiKey: '509acf3de4b0f2aa6bbd0607' }, {
@@ -21,7 +21,7 @@ mongolab.factory('Categories', function($resource) {
     });
 
 mongolab.factory('Items', function($resource) {
-    https://api.mongolab.com/api/1/databases/sherpadb/collections?apiKey=509acf3de4b0f2aa6bbd0607
+        // https://api.mongolab.com/api/1/databases/sherpadb/collections?apiKey=509acf3de4b0f2aa6bbd0607
         var Item = $resource('https://api.mongolab.com/api/1/databases' +
             '/sherpadb/collections/item/:id',
             { apiKey: '509acf3de4b0f2aa6bbd0607' }, {

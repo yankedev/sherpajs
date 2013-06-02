@@ -1,11 +1,16 @@
 'use strict';
 
-angular.module('sherpajsApp', ['ngResource'])
-  .config(function ($routeProvider) {
+var sherpa = angular.module('sherpajsApp', ['ngResource', 'mongolab']);
+
+sherpa.config(function ($routeProvider) {
     $routeProvider
-                .when('/orders/:username/:year/:week/', {
+                .when('/orders/:groupId/:year/:week/:username/', {
                     templateUrl: 'views/order.html',
                     controller: 'OrderCtrl'
+                })
+                .when('/group/:groupId/:year/:week/', {
+                    templateUrl: 'views/group.html',
+                    controller: 'GroupCtrl'
                 })
                 .when('/', {templateUrl: 'views/main.html', controller: 'MainCtrl'})
                 .when('/pickup', {templateUrl: 'views/pickup.html', controller: 'OrderCtrl'})
@@ -52,6 +57,6 @@ angular.module('sherpajsApp', ['ngResource'])
     .filter('formatPrice', function() {
         return function(input) {
             if (input == null) return "";
-            return (input/100*100).toFixed(2);
+            return (input/100*100).toFixed(2)+ ' CHF';
         };
     });
