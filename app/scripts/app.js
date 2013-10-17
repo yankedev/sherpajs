@@ -45,9 +45,9 @@ sherpa.config(function ($routeProvider) {
         };
     });
 
-function getCategory($scope, name){
-    for(var i=0;i<$scope.weeklist.categories.length;i++){
-        var cat = $scope.weeklist.categories[i];
+function getCategory(categories, name){
+    for(var i=0;i<categories.length;i++){
+        var cat = categories[i];
         if (cat.name == name){
             return cat;
         }

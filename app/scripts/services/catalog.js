@@ -2,16 +2,16 @@
 angular.module('SherpaService', ['ngResource'])
 .factory('SherpaService', function($http){
         return {
-            getCatalog: function() {
+            getCatalog: function(week, callback) {
                 $http.get('data/categories.json').success(function(data) {
-                    $scope.weeklist.categories = data;
+                    var categories = data;
 
-                    $http.get('data/w'+$scope.order.week+'/products.json').success(function(data) {
-                        $scope.weeklist.items = data;
+                    $http.get('data/w'+week+'/products.json').success(function(items) {
+                        var orderItems = [];
+                        for (var i=0;i<items.length;i++){
+                            var item = items[i];
 
-                        for (var i=0;i<$scope.weeklist.items.length;i++){
-                            var item = $scope.weeklist.items[i];
-                            var cat = getCategory($scope, item.category);
+                            var cat = getCategory(categories, item.category);
                             cat.items.push(item);
                             var orderItem =  {name : item.name,
                                 qty : 0,
@@ -19,9 +19,9 @@ angular.module('SherpaService', ['ngResource'])
                                 priceUnit: '',
                                 orderUnit: 'pz',
                                 editMode: false};
-                            $scope.order.items.push(orderItem);
+                            orderItems.push(orderItem);
                         }
-
+                        callback(categories, orderItems);
                     });
                     //once categories and items are loaded asyncronously, items have to be added to categories dynamically
                     //??animation???

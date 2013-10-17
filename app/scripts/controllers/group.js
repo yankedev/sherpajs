@@ -111,31 +111,11 @@ function calculateItemPrice(item){
 
         $scope.weeklist = {};
         $scope.weeklist.totals = [];
-        $scope.order.items = SherpaService.getCatalog();
 
-        $http.get('data/categories.json').success(function(data) {
-            $scope.weeklist.categories = data;
-
-            $http.get('data/w'+$scope.order.week+'/products.json').success(function(data) {
-                $scope.weeklist.items = data;
-
-                for (var i=0;i<$scope.weeklist.items.length;i++){
-                 var item = $scope.weeklist.items[i];
-                 var cat = getCategory($scope, item.category);
-                 cat.items.push(item);
-                var orderItem =  {name : item.name,
-                    qty : 0,
-                    price : 0,
-                    priceUnit: '',
-                    orderUnit: 'pz',
-                    editMode: false};
-                $scope.order.items.push(orderItem);
-                 }
-
-            });
-        //once categories and items are loaded asyncronously, items have to be added to categories dynamically
-        //??animation???
-        });
+       SherpaService.getCatalog($scope.order.week, function(categories, orderItems){
+           $scope.weeklist.categories = categories;
+           $scope.order.items = orderItems;
+       });
 
         $scope.saveOrder = function(){
             var filteredItems = $.grep($scope.order.items, function(e){
