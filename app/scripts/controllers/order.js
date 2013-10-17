@@ -1,17 +1,5 @@
 'use strict';
 
-function getCategory($scope, name){
-    for(var i=0;i<$scope.weeklist.categories.length;i++){
-        var cat = $scope.weeklist.categories[i];
-        if (cat.name == name){
-            return cat;
-        }
-    }
-    return undefined;
-};
-
-var sherpa = angular.module('sherpajsApp');
-
    sherpa.controller('OrderCtrl', function ($scope, $routeParams, $http, $filter, Orders) {
 
         $scope.visibleCategory = 0;

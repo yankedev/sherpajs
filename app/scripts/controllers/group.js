@@ -1,20 +1,10 @@
 'use strict';
 
-function getCategory($scope, name){
-    for(var i=0;i<$scope.weeklist.categories.length;i++){
-        var cat = $scope.weeklist.categories[i];
-        if (cat.name == name){
-            return cat;
-        }
-    }
-    return undefined;
-};
+
 
 function calculateItemPrice(item){
      return item.qty * item.price;
 }
-
-var sherpa = angular.module('sherpajsApp');
 
    sherpa.controller('GroupCtrl', function ($scope, $routeParams, $http, $filter, Orders) {
 
@@ -121,6 +111,7 @@ var sherpa = angular.module('sherpajsApp');
 
         $scope.weeklist = {};
         $scope.weeklist.totals = [];
+        $scope.order.items = SherpaService.getCatalog();
 
         $http.get('data/categories.json').success(function(data) {
             $scope.weeklist.categories = data;

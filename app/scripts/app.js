@@ -1,6 +1,6 @@
 'use strict';
 
-var sherpa = angular.module('sherpajsApp', ['ngResource', 'mongolab']);
+var sherpa = angular.module('sherpajsApp', ['ngResource', 'SherpaService', 'mongolab']);
 
 sherpa.config(function ($routeProvider) {
     $routeProvider
@@ -18,8 +18,8 @@ sherpa.config(function ($routeProvider) {
                 .when('/orderadmin', {templateUrl: 'views/orderadmin.html', controller: 'OrderCtrl'})
                 .otherwise({redirectTo: '/orders/yanke/2013/32/'});
 
-    }).
-    config(function($httpProvider) {
+    })
+    .config(function($httpProvider) {
         function loadingInterceptor($q,$log, $rootScope) {
             function success(response) {
                 $rootScope.loading=false;
@@ -38,25 +38,19 @@ sherpa.config(function ($routeProvider) {
         }
         $httpProvider.responseInterceptors.push(loadingInterceptor);
     })
-    .factory('SherpaService', ['Categories', function(Categories, $http){
-        return {
-            getOrderWeek: function($http){
-                var orderWeek = "0-0000";
-                $http.get('/app/md/order/week').success(function(data){
-                    return data;
-                });
-            },
-            getCatalogX: function(Categories) {
-                return  Categories.query();
-            },
-            getCatalog: function() {
-                return  [{name:'pippo'},{name:'pluto'}];
-            }
-        };
-    }])
     .filter('formatPrice', function() {
         return function(input) {
             if (input == null) return "";
             return (input/100*100).toFixed(2)+ ' CHF';
         };
     });
+
+function getCategory($scope, name){
+    for(var i=0;i<$scope.weeklist.categories.length;i++){
+        var cat = $scope.weeklist.categories[i];
+        if (cat.name == name){
+            return cat;
+        }
+    }
+    return undefined;
+};
