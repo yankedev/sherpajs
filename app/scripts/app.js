@@ -1,6 +1,6 @@
 'use strict';
 
-var sherpa = angular.module('sherpajsApp', ['ngResource', 'SherpaService', 'mongolab']);
+var sherpa = angular.module('sherpajsApp', ['ngResource', 'ngRoute', 'SherpaService', 'mongolab']);
 
 sherpa.config(function ($routeProvider) {
     $routeProvider
