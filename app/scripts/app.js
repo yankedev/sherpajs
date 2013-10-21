@@ -1,12 +1,12 @@
 'use strict';
 
-var sherpa = angular.module('sherpajsApp', ['ngResource', 'ngRoute', 'SherpaService', 'mongolab']);
+var sherpa = angular.module('sherpajsApp', ['ngResource', 'ngRoute', 'ui.bootstrap', 'SherpaService', 'mongolab']);
 
 sherpa.config(function ($routeProvider) {
     $routeProvider
                 .when('/orders/:groupId/:year/:week/:username/', {
                     templateUrl: 'views/order.html',
-                    controller: 'OrderCtrl'
+                    controller: 'OrderCtrl as orderCtrl'
                 })
                 .when('/group/:groupId/:year/:week/', {
                     templateUrl: 'views/group.html',

@@ -261,6 +261,7 @@
         "price": "5.40",
         "priceUnit": "kg",
         "orderUnit": "kg",
+        "step":0.25,
         "category": "Verdura"
     },
     {

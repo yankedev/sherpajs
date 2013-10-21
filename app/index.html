@@ -22,6 +22,9 @@
           }
       </style>
       <link href="styles/bootstrap-responsive.css" rel="stylesheet">
+
+      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
   </head>
   <body ng-app="sherpajsApp">
     <!--[if lt IE 7]>
@@ -35,10 +38,12 @@
 
     <!-- Add your site or application content here -->
     <div class="container" ng-view></div>
+
     <script src="components/jquery/jquery.js"></script>
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <!-- if I remove mongolab.js livereload task (grunt.js) do not work anymore -->

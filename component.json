@@ -10,7 +10,8 @@
     "angular-cookies": "~1.2.0-rc.3",
     "angular-sanitize": "~1.2.0-rc.3",
     "jquery": "~2.0.3",
-    "angular-route": "~1.2.0-rc.3"
+    "angular-route": "~1.2.0-rc.3",
+    "angular-ui-bootstrap": "~0.6.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0-rc.3",
