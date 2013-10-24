@@ -1,1 +1,9 @@
 /* Will be compiled down to a single stylesheet with your sass files */
+
+.orderitem {
+    margin-left: 0px;
+    border: #000099;
+}
+.orderitem #appendedInput{
+    text-align: right;
+}
