@@ -9,14 +9,18 @@ sherpa.controller('OrderCtrl', function ($scope, $routeParams, $http, $filter, O
         }else{
             orderItem.qty += 1;
         }
+        OrderService.calculateTotals(category);
     };
 
     this.decreaseQty = function(item, category){
         var orderItem = OrderService.getCurrentOrder().getitem(item.name);
-        if (item.step){
-            orderItem.qty -= item.step;
-        }else{
-            orderItem.qty -= 1;
+        if (!item.step){
+            item.step = 1;
+        }
+        var newQty = orderItem.qty - item.step;
+        if (newQty >= 0){
+            orderItem.qty = newQty;
+            OrderService.calculateTotals(category);
         }
     };
 

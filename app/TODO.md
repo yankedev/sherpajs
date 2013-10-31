@@ -8,7 +8,10 @@ Tech
     See http://angularfire.com/quickstart.html
 - Define data structure and security layers for https://sherpa.firebaseio.com
 - Import tool from XLS file
-- Category title (<ITEMS_COUNT>) should count the remaining items when filtering
+- Category title (<ITEMS_COUNT>) should count the remaining items when filtering.
+- Categories with 0 items should be hidden when filtering
+- Page header should always remain on top visible
+- scrolling view should have always on the first the row of the category that is currently visualized (as native iOS)
 
 
 BUC

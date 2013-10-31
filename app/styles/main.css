@@ -1,9 +1,28 @@
 /* Will be compiled down to a single stylesheet with your sass files */
 
-.orderitem {
+.orderItem {
     margin-left: 0px;
     border: #000099;
+    padding: 0px 0px 0px 0px;
 }
-.orderitem #appendedInput{
+.orderItem #appendedInput{
     text-align: right;
+}
+
+.orderItemDetail{
+    padding-left:20px;
+}
+
+.accordion-heading {
+    margin-left: -1px;
+    padding: 0px 0px 0px 6px;
+}
+
+.accordion-body {
+    margin-left: -1px;
+}
+
+.accordion-inner {
+    padding: 0px 0px 0px 0px;
+    border-top: 0px solid #e5e5e5;
 }

@@ -26,10 +26,10 @@
                            style="padding: 0px 0px;margin-bottom: 0px;"
                            ng-show="orderCtrl.getTotals(category)"
                            value="{{orderCtrl.getTotals(category) | formatPrice}}" disabled />
-                    <input type="text" value="{{($index + 1)*100}}" ng-model="category.idx"/>
                 </accordion-heading>
-                <accordion close-others="true">
-                <accordion-group ng-repeat="item in category.items | filter:search" class="orderitem row-fluid span12">
+                <div style="border-top: 1px solid #e5e5e5;">
+                <accordion close-others="true" >
+                <accordion-group ng-repeat="item in category.items | filter:search" class="orderItem row-fluid span12">
                     <accordion-heading class="row-fluid" style="margin-left: 0px; margin-bottom: 0px">
 
                         <div class="span2 input-append">
@@ -37,7 +37,7 @@
                             <input class="input-mini" id="appendedInput" ng-model-onchange
                                    ng-change="orderCtrl.calculateTotals(category)" type="number" step="{{item.step}}" min="0"
                                    placeholder="0" ng-model="order.getitem(item.name).qty"
-                                   ng-focus="orderCtrl.toggleEditMode(item)" tabindex="{{orderCtrl.getIndex(category)+$index+1}}"
+                                   ng-focus="orderCtrl.toggleEditMode(item)" tabindex="{{category.guiOrder*100+$index+1}}"
                                     /> <span class="add-on">{{item.orderUnit}}</span>
                         </div>
                         <div class="span5">
@@ -50,13 +50,16 @@
                         <div class="span2 pull-right">{{item.price | formatPrice}}/{{item.priceUnit}}</div>
 
                     </accordion-heading>
-                    <div class="row-fluid span9" style="margin-bottom: 10px">
-                        <div class="span1 input-medium btn-danger"
-                             ng-click="orderCtrl.decreaseQty(item, category)">
-                            <i class="icon-minus"/>
-                        </div>
-                        <div class="span1 input-medium btn-success" ng-click="orderCtrl.increaseQty(item, category)">
-                            <i class="icon-plus"/>
+                    <div class="orderItemDetail accordion-body row-fluid span9" style="margin-left: -1px; margin-bottom: 10px">
+                        <div class="span2">
+                            <a class="btn-danger btn-large"
+                                 ng-click="orderCtrl.decreaseQty(item, category)">
+                                <i class="icon-minus"/>
+                            </a>
+                            <a class="btn-success btn-large"
+                                  ng-click="orderCtrl.increaseQty(item, category)">
+                                <i class="icon-plus"/>
+                            </a>
                         </div>
                         <div class="span8">
                             <input type="range" class="input-large"
@@ -66,6 +69,7 @@
                     </div>
                 </accordion-group>
                 </accordion>
+                </div>
             </accordion-group>
         </accordion>
 
