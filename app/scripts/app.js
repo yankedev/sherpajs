@@ -12,11 +12,11 @@ sherpa.config(function ($routeProvider) {
                     templateUrl: 'views/group.html',
                     controller: 'GroupCtrl'
                 })
-                .when('/', {templateUrl: 'views/main.html', controller: 'MainCtrl'})
+                .when('/yeoman', {templateUrl: 'views/main.html', controller: 'MainCtrl'})
                 .when('/pickup', {templateUrl: 'views/pickup.html', controller: 'OrderCtrl'})
                 .when('/groupadmin', {templateUrl: 'views/groupadmin.html', controller: 'OrderCtrl'})
                 .when('/orderadmin', {templateUrl: 'views/orderadmin.html', controller: 'OrderCtrl'})
-                .otherwise({redirectTo: '/orders/yanke/2013/32/'});
+                .otherwise({redirectTo: '/orders/group1/2013/32/yanke/'});
 
     })
     .config(function($httpProvider) {

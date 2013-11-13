@@ -1,6 +1,8 @@
 'use strict';
 angular.module('OrderService2', ['ngResource'])
-.factory('OrderService', function($http, $routeParams){
+.factory('OrderService', function($http){
+
+        //Singleton properties available for the whole app
         var currentOrder = {};
         currentOrder.total = 0;
         currentOrder.items = [];
@@ -14,14 +16,6 @@ angular.module('OrderService2', ['ngResource'])
         var weeklist = {};
         weeklist.totals = [];
 
-        currentOrder.week = $routeParams.week;
-        currentOrder.nextweek = eval($routeParams.week)+1;
-        currentOrder.previousweek = eval($routeParams.week)-1;
-        currentOrder.year = $routeParams.year;
-        currentOrder.username = $routeParams.username;
-        currentOrder.groupId = $routeParams.groupId;
-
-
         return {
             getCurrentOrder :  function(){
                 return currentOrder;
@@ -29,6 +23,7 @@ angular.module('OrderService2', ['ngResource'])
             getTotal :  function(categoryName){
                 return weeklist.totals[categoryName];
             },
+            //TODO: rename function to calculateTotal
             calculateTotals : function(category){
                 var catTotal = 0;
                 angular.forEach(category.items, function(item){
